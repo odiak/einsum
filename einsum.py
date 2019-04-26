@@ -2,7 +2,7 @@ from typing import Dict, Tuple
 import numpy as np
 
 
-def einsum(expr: str, *args: Tuple[np.ndarray, ...]) -> np.ndarray:
+def einsum(expr: str, *args: Tuple[np.ndarray, ...], **kwargs) -> np.ndarray:
     (a, b) = map(str.strip, expr.split("->"))
     a_ = list(
         map(lambda s: list(map(str.strip, s.split(","))), map(str.strip, a.split(";")))
@@ -26,4 +26,4 @@ def einsum(expr: str, *args: Tuple[np.ndarray, ...]) -> np.ndarray:
             "".join(map(lambda s: char_map[s], b_)),
         ]
     )
-    return np.einsum(expr_, *args)
+    return np.einsum(expr_, *args, **kwargs)
