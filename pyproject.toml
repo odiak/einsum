@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "einsum"
-version = "0.0.1"
+version = "0.0.2"
 description = ""
 authors = ["Kaido Iwamoto <h6824.kaido@gmail.com>"]
 license = "MIT"
