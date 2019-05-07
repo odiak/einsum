@@ -1,5 +1,13 @@
 # Improved numpy's `einsum`
 
+## Installation
+
+Because it's currently not uploaded to PyPI, install it from GitHub.
+
+```console
+pip install git+https://github.com/odiak/einsum.git
+```
+
 ## Example
 
 ```python
